@@ -32,7 +32,7 @@ public class PositiveTests {
 		driver.findElement(By.id("username")).sendKeys("tomsmith");
 		driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 
 		// push log in button
 		WebElement logInButton = driver.findElement(By.className("radius"));
